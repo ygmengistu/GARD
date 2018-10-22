@@ -1,0 +1,157 @@
+﻿2018-10-22 04:48:52      Execution started.
+2018-10-22 04:48:52      QVB Version                   12.20.20500+2018-03-26 13:04:08+bd4e308
+2018-10-22 04:48:52      CPU Target                    x64
+2018-10-22 04:48:52      Operating System              Windows Server 2008 R2 Enterprise Service Pack 1 (64 bit edition)
+2018-10-22 04:48:52      Wow64 mode                    Not using Wow64
+2018-10-22 04:48:52      Language                      0409 English (United States) English
+2018-10-22 04:48:52      Country                       1 United States United States
+2018-10-22 04:48:52      MDAC Version                  6.1.7601.17514
+2018-10-22 04:48:52      MDAC Full Install Version     6.1.7601.17514
+2018-10-22 04:48:52      PreferredCompression          2
+2018-10-22 04:48:52      EnableParallelReload          1
+2018-10-22 04:48:52      ParallelizeQvdLoads           1
+2018-10-22 04:48:52      AutoSaveAfterReload           0
+2018-10-22 04:48:52      BackupBeforeReload            0
+2018-10-22 04:48:52      EnableFlushLog                0
+2018-10-22 04:48:52      SaveInfoWhenSavingFile        0
+2018-10-22 04:48:52      UserLogfileCharset            65001
+2018-10-22 04:48:52      OdbcLoginTimeout              -1
+2018-10-22 04:48:52      OdbcConnectionTimeout         -1
+2018-10-22 04:48:52      LongestPossibleLine           1048576
+2018-10-22 04:48:52      MaxCoreMask                   -1
+2018-10-22 04:48:52      ScriptWantsDbWrite            false
+2018-10-22 04:48:52      ScriptWantsExe                false
+2018-10-22 04:48:52      LogFile CodePage Used:        65001
+2018-10-22 04:48:52      UseMemoryFillPattern          1
+2018-10-22 04:48:52      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
+2018-10-22 04:48:52      SequentialThreadCount         100
+2018-10-22 04:48:52      NumberOfCores (effective)     32
+2018-10-22 04:48:52      ReloadCodebase                Bnf
+2018-10-22 04:48:52      Reload Executed By            NIH\qv4service
+2018-10-22 04:48:52      Process Executing             QVB
+2018-10-22 04:48:52      Process ID                    33496
+2018-10-22 04:48:52 0002 SET ThousandSep=','
+2018-10-22 04:48:52 0003 SET DecimalSep='.'
+2018-10-22 04:48:52 0004 SET MoneyThousandSep=','
+2018-10-22 04:48:52 0005 SET MoneyDecimalSep='.'
+2018-10-22 04:48:52 0006 SET MoneyFormat='$#,##0.00;($#,##0.00)'
+2018-10-22 04:48:52 0007 SET TimeFormat='h:mm:ss TT'
+2018-10-22 04:48:52 0008 SET DateFormat='M/D/YYYY'
+2018-10-22 04:48:52 0009 SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT'
+2018-10-22 04:48:52 0010 SET FirstWeekDay=6
+2018-10-22 04:48:52 0011 SET BrokenWeeks=1
+2018-10-22 04:48:52 0012 SET ReferenceDay=0
+2018-10-22 04:48:52 0013 SET FirstMonthOfYear=1
+2018-10-22 04:48:52 0014 SET CollationLocale='en-US'
+2018-10-22 04:48:52 0015 SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec'
+2018-10-22 04:48:52 0016 SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December'
+2018-10-22 04:48:52 0017 SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun'
+2018-10-22 04:48:52 0018 SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday'
+2018-10-22 04:48:52 0021 LET vCurrentYear = year(today())
+2018-10-22 04:48:52 0022 LET vCurrentMonth = month(today())
+2018-10-22 04:48:52 0023 LET vTop = '10'
+2018-10-22 04:48:52 0035 GardCase:
+2018-10-22 04:48:52 0036 LOAD CaseID, 
+2018-10-22 04:48:52 0037      AbbreviatedInquiry, 
+2018-10-22 04:48:52 0038      IsPublished, 
+2018-10-22 04:48:52 0039      TotalTimeSpent, 
+2018-10-22 04:48:52 0040      CreatedByUserName, 
+2018-10-22 04:48:52 0041      ModifiedByUserName, 
+2018-10-22 04:48:52 0042      OwnedByUserID, 
+2018-10-22 04:48:52 0043      CreateDateTime, 
+2018-10-22 04:48:52 0044      ModifiedDateTime, 
+2018-10-22 04:48:52 0045      AmountOfDays, 
+2018-10-22 04:48:52 0046      DateReceivedAtIC,
+2018-10-22 04:48:52 0047      year(DateReceivedAtIC) as Year,
+2018-10-22 04:48:52 0048      month(DateReceivedAtIC) as Month, 
+2018-10-22 04:48:52 0049      InquiryReceivedByID, 
+2018-10-22 04:48:52 0050      TypeOfContactID, 
+2018-10-22 04:48:52 0051      PrimaryLanguageID,
+2018-10-22 04:48:52 0052      
+2018-10-22 04:48:52 0053      IF(PrimaryLanguageID = 81, 'English', if(PrimaryLanguageID = 82, 'Spanish','Other')) as Language, 
+2018-10-22 04:48:52 0054      InquiryOriginID,
+2018-10-22 04:48:52 0055      If(InquiryOriginID = 228, 'Domestic', if(InquiryOriginID = 231, 'International', 'Unknown')) as InquiryOrigin, 
+2018-10-22 04:48:52 0056      UserCategoryID, 
+2018-10-22 04:48:52 0057      InqSubject, 
+2018-10-22 04:48:52 0058      InitialInquiry, 
+2018-10-22 04:48:52 0059      OriginalInquiry, 
+2018-10-22 04:48:52 0060      
+2018-10-22 04:48:52 0061      GenderID, 
+2018-10-22 04:48:52 0062      InquirerAgeID, 
+2018-10-22 04:48:52 0063      AffectedIndividualAgeID, 
+2018-10-22 04:48:52 0064      HowFoundOutID, 
+2018-10-22 04:48:52 0065      CallerDistressedID, 
+2018-10-22 04:48:52 0066      ContactedBeforeID, 
+2018-10-22 04:48:52 0067      DateOfResponse,
+2018-10-22 04:48:52 0068      IF(IsNull(DateOfResponse),0,1) as CaseCompleted,
+2018-10-22 04:48:52 0069      ClassificationOfResponseID, 
+2018-10-22 04:48:52 0070      TypeOfResponseID,
+2018-10-22 04:48:52 0071      IF(TypeOfContactID= 174, 'Email'
+2018-10-22 04:48:52 0072      	, IF(TypeOfContactID = 181 or TypeOfContactID = 183, 'Phone and Voicemail'
+2018-10-22 04:48:52 0073      	, IF(TypeOfContactID = 371 or TypeOfContactID = 315 or TypeOfContactID = 180 or TypeOfContactID = 118 or TypeOfContactID = 184, 'Online and Comments Forms'
+2018-10-22 04:48:52 0074      	, 'Letter, Fax, TTY, Other'))) as TypeOfContact,
+2018-10-22 04:48:52 0075      
+2018-10-22 04:48:52 0076      
+2018-10-22 04:48:52 0077      PrimaryLanguageOfResponseID, 
+2018-10-22 04:48:52 0078      GinUserId, 
+2018-10-22 04:48:52 0079      InquiryPIIValidated, 
+2018-10-22 04:48:52 0080      SubjectPIIValidated, 
+2018-10-22 04:48:52 0081      NotesPIIValidated, 
+2018-10-22 04:48:52 0082      ResponsePIIValidated, 
+2018-10-22 04:48:52 0083      ResponseReviewed, 
+2018-10-22 04:48:52 0084      ResponseReviewedDateTime
+2018-10-22 04:48:52 0085 FROM
+2018-10-22 04:48:52 0086 [\\nihdqv1\QlikView\03_SourceDocuments\03.ICS\NCATS\GARD\GardCase.qvd]
+2018-10-22 04:48:52 0087 (qvd)
+2018-10-22 04:48:53      	42 fields found: CaseID, AbbreviatedInquiry, IsPublished, TotalTimeSpent, CreatedByUserName, ModifiedByUserName, OwnedByUserID, CreateDateTime, ModifiedDateTime, AmountOfDays, DateReceivedAtIC, Year, Month, InquiryReceivedByID, TypeOfContactID, PrimaryLanguageID, Language, InquiryOriginID, InquiryOrigin, UserCategoryID, InqSubject, InitialInquiry, OriginalInquiry, GenderID, InquirerAgeID, AffectedIndividualAgeID, HowFoundOutID, CallerDistressedID, ContactedBeforeID, DateOfResponse, CaseCompleted, ClassificationOfResponseID, TypeOfResponseID, TypeOfContact, PrimaryLanguageOfResponseID, GinUserId, InquiryPIIValidated, SubjectPIIValidated, NotesPIIValidated, ResponsePIIValidated, ResponseReviewed, ResponseReviewedDateTime, 
+2018-10-22 04:48:53      76,833 lines fetched
+2018-10-22 04:48:53 0099 SpecificCondition:
+2018-10-22 04:48:53 0100 LOAD ID, 
+2018-10-22 04:48:53 0101      CaseID, 
+2018-10-22 04:48:53 0102      DiseaseID
+2018-10-22 04:48:53 0103 FROM
+2018-10-22 04:48:53 0104 \\nihdqv1\QlikView\03_SourceDocuments\03.ICS\NCATS\GARD\SpecificCondition.qvd
+2018-10-22 04:48:53 0105 (qvd)
+2018-10-22 04:48:53      	3 fields found: ID, CaseID, DiseaseID, 
+2018-10-22 04:48:53      70,232 lines fetched
+2018-10-22 04:48:53 0108 Disease:
+2018-10-22 04:48:53 0109 LOAD DiseaseID, 
+2018-10-22 04:48:53 0110      DiseaseName, 
+2018-10-22 04:48:53 0111      IsBroad, 
+2018-10-22 04:48:53 0112      BroadDefinition, 
+2018-10-22 04:48:53 0113      LastReviewedDate, 
+2018-10-22 04:48:53 0114      CreatedDate, 
+2018-10-22 04:48:53 0115      CreatedBy, 
+2018-10-22 04:48:53 0116      UpdatedDate, 
+2018-10-22 04:48:53 0117      UpdatedBy, 
+2018-10-22 04:48:53 0118      isSpanish, 
+2018-10-22 04:48:53 0119      EnglishID, 
+2018-10-22 04:48:53 0120      StatusID, 
+2018-10-22 04:48:53 0121      visibleOnWeb, 
+2018-10-22 04:48:53 0122      isReviewed, 
+2018-10-22 04:48:53 0123      isRare
+2018-10-22 04:48:53 0124 FROM
+2018-10-22 04:48:53 0125 \\nihdqv1\QlikView\03_SourceDocuments\03.ICS\NCATS\GARD\Disease.qvd
+2018-10-22 04:48:53 0126 (qvd)
+2018-10-22 04:48:53      	15 fields found: DiseaseID, DiseaseName, IsBroad, BroadDefinition, LastReviewedDate, CreatedDate, CreatedBy, UpdatedDate, UpdatedBy, isSpanish, EnglishID, StatusID, visibleOnWeb, isReviewed, isRare, 
+2018-10-22 04:48:53      8,189 lines fetched
+2018-10-22 04:48:53 0129 CodeNameMap:
+2018-10-22 04:48:53 0130 
+2018-10-22 04:48:53 0131 Mapping LOAD 
+2018-10-22 04:48:53 0132 	ID as ReasonForInquiryCodeID,
+2018-10-22 04:48:53 0133 	CodeName 
+2018-10-22 04:48:53 0134 FROM
+2018-10-22 04:48:53 0135 \\nihdqv1\QlikView\03_SourceDocuments\03.ICS\NCATS\GARD\GardCaseCodeLookUp.qvd 
+2018-10-22 04:48:53 0136 (qvd)
+2018-10-22 04:48:53      	2 fields found: ReasonForInquiryCodeID, CodeName, 
+2018-10-22 04:48:53      396 lines fetched
+2018-10-22 04:48:53 0139 LOAD ID, 
+2018-10-22 04:48:53 0140      
+2018-10-22 04:48:53 0141      ReasonForInquiryCodeID,
+2018-10-22 04:48:53 0142      ApplyMap('CodeNameMap', ReasonForInquiryCodeID) as ReasonForInquiryCode
+2018-10-22 04:48:53 0143 FROM
+2018-10-22 04:48:53 0144 \\nihdqv1\QlikView\03_SourceDocuments\03.ICS\NCATS\GARD\ReasonforInquiry.qvd
+2018-10-22 04:48:53 0145 (qvd)
+2018-10-22 04:48:53      	3 fields found: ID, ReasonForInquiryCodeID, ReasonForInquiryCode, 
+2018-10-22 04:48:53      143,404 lines fetched
+2018-10-22 04:48:53      Execution finished.

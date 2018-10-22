@@ -1,0 +1,80 @@
+﻿2018-10-22 04:42:07      Execution started.
+2018-10-22 04:42:07      QVB Version                   12.20.20500+2018-03-26 13:04:08+bd4e308
+2018-10-22 04:42:07      CPU Target                    x64
+2018-10-22 04:42:07      Operating System              Windows Server 2008 R2 Enterprise Service Pack 1 (64 bit edition)
+2018-10-22 04:42:07      Wow64 mode                    Not using Wow64
+2018-10-22 04:42:07      Language                      0409 English (United States) English
+2018-10-22 04:42:07      Country                       1 United States United States
+2018-10-22 04:42:07      MDAC Version                  6.1.7601.17514
+2018-10-22 04:42:07      MDAC Full Install Version     6.1.7601.17514
+2018-10-22 04:42:07      PreferredCompression          2
+2018-10-22 04:42:07      EnableParallelReload          1
+2018-10-22 04:42:07      ParallelizeQvdLoads           1
+2018-10-22 04:42:07      AutoSaveAfterReload           0
+2018-10-22 04:42:07      BackupBeforeReload            0
+2018-10-22 04:42:07      EnableFlushLog                0
+2018-10-22 04:42:07      SaveInfoWhenSavingFile        0
+2018-10-22 04:42:07      UserLogfileCharset            65001
+2018-10-22 04:42:07      OdbcLoginTimeout              -1
+2018-10-22 04:42:07      OdbcConnectionTimeout         -1
+2018-10-22 04:42:07      LongestPossibleLine           1048576
+2018-10-22 04:42:07      MaxCoreMask                   -1
+2018-10-22 04:42:07      ScriptWantsDbWrite            false
+2018-10-22 04:42:07      ScriptWantsExe                false
+2018-10-22 04:42:07      LogFile CodePage Used:        65001
+2018-10-22 04:42:07      UseMemoryFillPattern          1
+2018-10-22 04:42:07      ScriptMode                    Legacy (gives greater system access) (aka qv11 mode)
+2018-10-22 04:42:07      SequentialThreadCount         100
+2018-10-22 04:42:07      NumberOfCores (effective)     32
+2018-10-22 04:42:07      ReloadCodebase                Bnf
+2018-10-22 04:42:07      Reload Executed By            NIH\qv4service
+2018-10-22 04:42:07      Process Executing             QVB
+2018-10-22 04:42:07      Process ID                    35368
+2018-10-22 04:42:07 0002 SET ThousandSep=','
+2018-10-22 04:42:07 0003 SET DecimalSep='.'
+2018-10-22 04:42:07 0004 SET MoneyThousandSep=','
+2018-10-22 04:42:07 0005 SET MoneyDecimalSep='.'
+2018-10-22 04:42:07 0006 SET MoneyFormat='$#,##0.00;($#,##0.00)'
+2018-10-22 04:42:07 0007 SET TimeFormat='h:mm:ss TT'
+2018-10-22 04:42:07 0008 SET DateFormat='M/D/YYYY'
+2018-10-22 04:42:07 0009 SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT'
+2018-10-22 04:42:07 0010 SET FirstWeekDay=6
+2018-10-22 04:42:07 0011 SET BrokenWeeks=1
+2018-10-22 04:42:07 0012 SET ReferenceDay=0
+2018-10-22 04:42:07 0013 SET FirstMonthOfYear=1
+2018-10-22 04:42:07 0014 SET CollationLocale='en-US'
+2018-10-22 04:42:07 0015 SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec'
+2018-10-22 04:42:07 0016 SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December'
+2018-10-22 04:42:07 0017 SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun'
+2018-10-22 04:42:07 0018 SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday'
+2018-10-22 04:42:07 0021 ODBC CONNECT TO ***
+2018-10-22 04:42:09 0024 GardCase:
+2018-10-22 04:42:09 0025 SQL select * from ORDRGARD.dbo.tblGardCase
+2018-10-22 04:48:45      	39 fields found: CaseID, AbbreviatedInquiry, IsPublished, TotalTimeSpent, CreatedByUserName, ModifiedByUserName, OwnedByUserID, CreateDateTime, ModifiedDateTime, AmountOfDays, DateReceivedAtIC, InquiryReceivedByID, TypeOfContactID, PrimaryLanguageID, InquiryOriginID, UserCategoryID, InqSubject, InitialInquiry, OriginalInquiry, Notes, GenderID, InquirerAgeID, AffectedIndividualAgeID, HowFoundOutID, CallerDistressedID, ContactedBeforeID, DateOfResponse, ClassificationOfResponseID, TypeOfResponseID, ResponseText, ResponseHtmlText, PrimaryLanguageOfResponseID, GinUserId, InquiryPIIValidated, SubjectPIIValidated, NotesPIIValidated, ResponsePIIValidated, ResponseReviewed, ResponseReviewedDateTime, 
+2018-10-22 04:48:45      76,833 lines fetched
+2018-10-22 04:48:45 0027 STORE GardCase into GardCase.qvd (qvd)
+2018-10-22 04:48:47 0029 Drop Table GardCase
+2018-10-22 04:48:47 0032 GardCaseCodeLookUp:
+2018-10-22 04:48:47 0033 
+2018-10-22 04:48:47 0034 SQL Select * from ORDRGARD.dbo.luCaseCode
+2018-10-22 04:48:47      	6 fields found: ID, CodeGroupID, CodeName, IsActive, CodeDefinition, SpanishCodeName, 
+2018-10-22 04:48:47      396 lines fetched
+2018-10-22 04:48:47 0036 Store GardCaseCodeLookUp into GardCaseCodeLookUp.qvd (qvd)
+2018-10-22 04:48:47 0038 SpecificCondition:
+2018-10-22 04:48:47 0039 SQL select * from ORDRGARD.dbo.ascCaseSpecificCondition
+2018-10-22 04:48:48      	3 fields found: ID, CaseID, DiseaseID, 
+2018-10-22 04:48:48      70,232 lines fetched
+2018-10-22 04:48:48 0041 STORE SpecificCondition into SpecificCondition.qvd (qvd)
+2018-10-22 04:48:48 0044 Disease:
+2018-10-22 04:48:48 0045 SQL select * from ORDRGARD.dbo.RD_tblDisease
+2018-10-22 04:48:48      	15 fields found: DiseaseID, DiseaseName, IsBroad, BroadDefinition, LastReviewedDate, CreatedDate, CreatedBy, UpdatedDate, UpdatedBy, isSpanish, EnglishID, StatusID, visibleOnWeb, isReviewed, isRare, 
+2018-10-22 04:48:48      8,189 lines fetched
+2018-10-22 04:48:48 0047 STORE Disease into Disease.qvd (qvd)
+2018-10-22 04:48:48 0049 ReasonforInquiry:
+2018-10-22 04:48:48 0050 SQL select * from ORDRGARD.dbo.ascCaseReasonForInquiry
+2018-10-22 04:48:48      	3 fields found: ID, CaseID, ReasonForInquiryCodeID, 
+2018-10-22 04:48:48      143,404 lines fetched
+2018-10-22 04:48:48 0052 Store ReasonforInquiry into ReasonforInquiry.qvd (qvd)
+2018-10-22 04:48:48 0054 DROP Table ReasonforInquiry
+2018-10-22 04:48:48 0057 DISCONNECT
+2018-10-22 04:48:49      Execution finished.
